@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-cost-intelligence"
+version = "0.1.0"
+description = "See where LLM/API money goes, why it goes there, and how to cut waste. Local-first FinOps for Claude Code & the Anthropic API."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ingrid Toulotte" }]
+keywords = ["llm", "finops", "cost", "anthropic", "claude", "tokens", "analytics", "dashboard", "observability"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Utilities",
+]
+dependencies = []   # zero runtime dependencies — standard library only
+
+[project.urls]
+Homepage = "https://github.com/ingridtoulotte/claude-cost-intelligence"
+Repository = "https://github.com/ingridtoulotte/claude-cost-intelligence"
+Issues = "https://github.com/ingridtoulotte/claude-cost-intelligence/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+cci = "cci.cli:main"
+
+[tool.setuptools]
+packages = ["cci"]
+
+[tool.setuptools.package-data]
+cci = ["py.typed"]

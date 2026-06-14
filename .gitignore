@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# CCI output
+cci-dashboard.html
+*.local.json
+cci.config.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# screenshot helper scratch
+assets/_t_*.html
