@@ -13,7 +13,17 @@ Not another usage logger — it tells you *what to fix and what you'll save*.
 ![Dependencies](https://img.shields.io/badge/runtime%20deps-0-39d0d8.svg)
 ![Local-first](https://img.shields.io/badge/data-100%25%20local-8b7bff.svg)
 
+**[▶ Live demo](https://ingridtoulotte.github.io/claude-cost-intelligence/)** &nbsp;·&nbsp; **[Quick start](#quick-start)** &nbsp;·&nbsp; **[How it compares](#how-it-compares)** &nbsp;·&nbsp; **[Methodology](docs/METHODOLOGY.md)**
+
 </div>
+
+<p align="center">
+  <img src="assets/hero-terminal.svg" alt="Claude Cost Intelligence terminal report — total spend, recoverable amount, top session, top model" width="860">
+</p>
+
+<p align="center">
+  <a href="https://ingridtoulotte.github.io/claude-cost-intelligence/"><b>👉 Click the live dashboard</b></a> (synthetic data, no install) &nbsp;·&nbsp; or run <code>pip install … && cci dashboard --open</code> on your own logs in 30 seconds.
+</p>
 
 <p align="center">
   <img src="assets/dash-overview.png" alt="Claude Cost Intelligence — overview dashboard" width="900">
@@ -92,18 +102,23 @@ That's the emotional hook: *I need to see where my money is going.*
 
 ## Quick start
 
+**Zero-install:** [open the live dashboard](https://ingridtoulotte.github.io/claude-cost-intelligence/) (synthetic data) to see exactly what you get.
+
+**On your own usage — one line, zero runtime dependencies:**
+
 ```bash
-# 1. install (zero runtime dependencies)
-pip install -e .
-
-# 2. see it instantly on synthetic data (no real logs needed)
-cci sample                                   # writes examples/sample-usage.jsonl
-cci dashboard --path examples/sample-usage.jsonl --open
-
-# 3. run it on YOUR Claude Code usage
-cci                                          # terminal report (~/.claude/projects)
-cci dashboard --open                         # full HTML dashboard
+pip install git+https://github.com/ingridtoulotte/claude-cost-intelligence
+cci dashboard --open          # reads ~/.claude/projects, writes + opens the HTML dashboard
 ```
+
+Prefer to try before pointing it at real logs?
+
+```bash
+cci sample                                          # writes synthetic usage data
+cci dashboard --path examples/sample-usage.jsonl --open
+```
+
+Working from a clone? `pip install -e .` does the same thing.
 
 That's it. No account, no API key, no server. Everything is computed locally.
 
@@ -242,3 +257,15 @@ Issues and PRs welcome — see [CONTRIBUTING.md](CONTRIBUTING.md). Run `cci self
 ## License
 
 [MIT](LICENSE) © 2026 Ingrid Toulotte
+
+---
+
+<div align="center">
+
+### If CCI shows you a dollar you didn't know you were spending, **★ star it** — that's the whole thank-you.
+
+**[▶ Live demo](https://ingridtoulotte.github.io/claude-cost-intelligence/)** · **[Quick start](#quick-start)** · **[Methodology](docs/METHODOLOGY.md)** · **[Roadmap](#roadmap)**
+
+*Cost intelligence, not cost logging. Computed locally. Every formula published.*
+
+</div>

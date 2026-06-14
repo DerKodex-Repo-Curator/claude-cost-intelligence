@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#39d0d8"/><stop offset="1" stop-color="#8b7bff"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="858" height="468" rx="12" fill="#0a0d14" stroke="#1f2738"/>
+  <!-- title bar -->
+  <rect x="1" y="1" width="858" height="44" rx="12" fill="#0d1117"/>
+  <rect x="1" y="33" width="858" height="12" fill="#0d1117"/>
+  <circle cx="26" cy="23" r="6" fill="#ff5f56"/><circle cx="46" cy="23" r="6" fill="#ffbd2e"/><circle cx="66" cy="23" r="6" fill="#27c93f"/>
+  <text x="430" y="28" text-anchor="middle" font-size="13" fill="#8b98a9">cci report  —  Claude Cost Intelligence</text>
+
+  <!-- header -->
+  <text x="34" y="78" font-size="16" font-weight="700" fill="#39d0d8" letter-spacing="1">CLAUDE COST INTELLIGENCE</text>
+  <text x="826" y="78" text-anchor="end" font-size="11" fill="#5b6678">LOCAL · ZERO DEPS · CACHE-AWARE</text>
+  <text x="34" y="98" font-size="12.5" fill="#5b6678">2026-05-15 → 2026-06-13   ·   30 days · 450 requests · 78 sessions</text>
+  <line x1="34" y1="112" x2="826" y2="112" stroke="#1f2738"/>
+
+  <!-- headline cards -->
+  <text x="34"  y="140" font-size="17" font-weight="700" fill="#e6edf3">$43.07</text>
+  <text x="190" y="140" font-size="13" fill="#8b98a9">Total spend</text>
+  <text x="360" y="140" font-size="13" fill="#5b6678">last 30 days</text>
+
+  <text x="34"  y="170" font-size="17" font-weight="700" fill="#3fb950">$4.78</text>
+  <text x="190" y="170" font-size="13" fill="#8b98a9">Recoverable</text>
+  <text x="360" y="170" font-size="13" fill="#5b6678">~11% of spend · band $3–$6</text>
+
+  <text x="34"  y="200" font-size="17" font-weight="700" fill="#d29922">63%</text>
+  <text x="190" y="200" font-size="13" fill="#8b98a9">Top session</text>
+  <text x="360" y="200" font-size="13" fill="#5b6678">one chat = 63% of the month</text>
+
+  <text x="34"  y="230" font-size="17" font-weight="700" fill="#d29922">opus-4-8</text>
+  <text x="190" y="230" font-size="13" fill="#8b98a9">Top model</text>
+  <text x="360" y="230" font-size="13" fill="#5b6678">77% of spend · 2.3× even share</text>
+
+  <line x1="34" y1="248" x2="826" y2="248" stroke="#1f2738"/>
+
+  <!-- spend by model -->
+  <text x="34" y="276" font-size="12" font-weight="700" fill="#8b98a9" letter-spacing="1">SPEND BY MODEL</text>
+
+  <text x="34"  y="304" font-size="14" fill="#e6edf3">opus-4-8</text>
+  <text x="200" y="304" font-size="14" fill="#8b7bff" xml:space="preserve">██████████████····</text>
+  <text x="600" y="304" font-size="14" text-anchor="end" fill="#e6edf3">$33.13</text>
+  <text x="660" y="304" font-size="14" text-anchor="end" fill="#5b6678">77%</text>
+
+  <text x="34"  y="330" font-size="14" fill="#e6edf3">sonnet-4-6</text>
+  <text x="200" y="330" font-size="14" fill="#8b7bff" xml:space="preserve">███···············</text>
+  <text x="600" y="330" font-size="14" text-anchor="end" fill="#e6edf3">$7.18</text>
+  <text x="660" y="330" font-size="14" text-anchor="end" fill="#5b6678">17%</text>
+
+  <text x="34"  y="356" font-size="14" fill="#e6edf3">haiku-4-5</text>
+  <text x="200" y="356" font-size="14" fill="#8b7bff" xml:space="preserve">█·················</text>
+  <text x="600" y="356" font-size="14" text-anchor="end" fill="#e6edf3">$2.76</text>
+  <text x="660" y="356" font-size="14" text-anchor="end" fill="#5b6678">6%</text>
+
+  <line x1="34" y1="376" x2="826" y2="376" stroke="#1f2738"/>
+
+  <!-- punchline -->
+  <circle cx="40" cy="406" r="5" fill="#3fb950"/>
+  <text x="56" y="411" font-size="14" fill="#3fb950" font-weight="700">$4.78 recoverable</text>
+  <text x="206" y="411" font-size="14" fill="#e6edf3">— every dollar traced to a one-line fix, with the math published.</text>
+
+  <text x="34" y="446" font-size="11.5" fill="#5b6678">computed locally · no network · see docs/METHODOLOGY.md for every formula</text>
+</svg>
